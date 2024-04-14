@@ -31,7 +31,7 @@
     Version history:
     1.0.0 - (2024-04-12) Script created
 #>
-#Requires -Modules Microsoft.Graph
+#Requires -Modules Microsoft.Graph.Authentication,Microsoft.Graph.Applications
 [CmdletBinding(SupportsShouldProcess)]
 param(
     [parameter(Mandatory = $true, HelpMessage = "Specify the Entra ID tenant ID or the common name, e.g. 'tenant.onmicrosoft.com'.")]
